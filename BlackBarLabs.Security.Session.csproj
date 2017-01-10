@@ -50,6 +50,12 @@
     <Compile Include="ISession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlackBarLabs.Api\BlackBarLabs.Api.csproj">
+      <Project>{AAA1724B-0787-4CE1-BAD5-E3C930DB07C1}</Project>
+      <Name>BlackBarLabs.Api</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

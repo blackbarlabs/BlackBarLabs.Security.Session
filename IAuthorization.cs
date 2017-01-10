@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
+using BlackBarLabs.Api.Resources;
+
 namespace BlackBarLabs.Security.Session
 {
     public interface IAuthorization
     {
         [DataMember]
-        Guid Id { get; set; }
+        WebId Id { get; set; }
 
         [DataMember]
         Uri[] CredentialProviders { get; set; }
